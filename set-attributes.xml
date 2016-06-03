@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module specificationVersion="2.0">
+	<ModulePrefs title="Get Version" height="200" scrolling="true">
+		<Optional feature="com.ibm.rdm.rm.api"/>
+</ModulePrefs>
+	<Content type="html" href="get-version.html"/>
+</Module> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript">var isIE = false;</script>
+    <!--[if IE]><script type="text/javascript">isIE = true;</script><![endif]-->
+    <title>test</title>
+  </head>
+  <body>
+<button id="copy-button">Button</button>
+<script>
+var btn = document.getElementById("copy-button");
+btn.addEventListener("click", clickHandler, false);
+btn.addEventListener("copy", copyHandler, false);
+ 
+function clickHandler(e) {
+e.target.dispatchEvent(new ClipboardEvent("copy"));
+}
+ 
+function copyHandler(e) {
+e.preventDefault();
+e.clipboardData.setData("text/plain", "Simulated copy. Yay!");
+ 
+// CRITICAL: Must call `preventDefault();` to get this data into the system/desktop clipboard!!!
+
+}
+</script>
+  </body>
+</html>

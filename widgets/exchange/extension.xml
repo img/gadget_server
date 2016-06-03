@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Sample driver extensin for server-managed gadget
+-->
+<Module specificationVersion="2.0">
+<ModulePrefs title="eXchange demo" height="700" scrolling="true">
+	<Require feature="com.ibm.rdm.rm.api"/>
+</ModulePrefs>
+
+<providesService operation="artifact.import" eventName="artifact.import.DSF" title="DSF" description="eXchange DSF import" icon="" fileExt="DSF" intoModule="true" />
+<providesService operation="artifact.export" eventName="artifact.export.DSF" title="DSF" description="eXchange DSF export" icon="" />
+
+<Content type="html">
+	<![CDATA[
+		<html>
+			<head>
+				<script src="js/jquery-1.8.2.min.js"></script>
+				<script src="js/extension.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/extension.css">
+			</head>
+			<body width=100%><table class=outerTable>
+			<tr><td><div id=placeHolder>
+			
+			
+			</div></td></tr>
+			<tr><td><div id=divStatus class=info>loading....<br></div></td></tr></table>
+			
+			</body>
+		</html>
+	]]>
+</Content>
+</Module>

@@ -1,0 +1,10 @@
+{
+  "name": "gadget",
+  "description": "gadget",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "https": "~1.0.0"
+  }
+}

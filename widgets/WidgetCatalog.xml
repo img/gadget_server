@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:ju="http://jazz.net/ns/ui#" 
+	xmlns:dc="http://purl.org/dc/terms/">
+
+   <ju:catalog-entry>
+      <dc:title>eXchange2</dc:title>
+      <dc:description>This extension is a test of eXchange Import/Export</dc:description>
+      <dc:creator>img</dc:creator>
+      <ju:gadget rdf:resource='./exchange/extension.xml' />
+      <ju:icon rdf:resource='./exchange/extension.gif'/>
+      <ju:preview rdf:resource='./exchange/preview.png'/>
+      <ju:thumbnail rdf:resource='./exchange/thumbnail.png'/>
+      <ju:category>Sample Extensions</ju:category> 
+      <ju:category>Requirements</ju:category> 
+   </ju:catalog-entry>	
+</rdf:RDF> 
